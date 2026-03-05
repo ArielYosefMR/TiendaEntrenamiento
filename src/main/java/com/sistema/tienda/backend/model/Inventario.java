@@ -22,4 +22,8 @@ public class Inventario {
 
     @Column(nullable = false)
     private Integer cantidad;
+    
+    @Column(nullable = false)
+    private Integer stockMinimo;    
+    
 }

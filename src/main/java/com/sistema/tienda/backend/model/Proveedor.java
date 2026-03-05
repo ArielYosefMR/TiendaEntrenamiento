@@ -18,4 +18,11 @@ public class Proveedor {
 
     @Column(nullable = false)
     private String nombre;
+
+    private String telefono;
+
+    private String direccion;
+
+    @Column(nullable = false)
+    private Boolean estado = true;
 }

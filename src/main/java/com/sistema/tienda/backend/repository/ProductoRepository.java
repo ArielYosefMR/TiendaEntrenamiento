@@ -1,5 +1,7 @@
 package com.sistema.tienda.backend.repository;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
 
@@ -9,5 +11,6 @@ public interface ProductoRepository extends JpaRepository<Producto, Long>{
 
 	Iterable<Producto> findByEstadoTrue();
 	Iterable<Producto> findByEstadoFalse();
+	Optional<Producto> findByCodigoBarras(String codigoBarras);
 
 }
